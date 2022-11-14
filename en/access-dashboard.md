@@ -37,7 +37,9 @@ metadata:
   name: basic
 spec:
   pd:
-    enableDashboardInternalProxy: true
+    config: |
+      [dashboard]
+        internal-proxy = true
 ```
 
 ## Method 1. Access TiDB Dashboard by port forward
